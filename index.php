@@ -10,8 +10,17 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <script src="js/facebook.js" type="text/javascript">
+            FB.ui();    
+        </script>   
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsebastian.calderonlabarca%2Fposts%2F10216096263107333&width=500" 
+                width="500" 
+                height="231" 
+                style="border:none;overflow:hidden" 
+                scrolling="no"
+                frameborder="0" 
+                allowTransparency="true">                  
+        </iframe>
     </body>
+    
 </html>
