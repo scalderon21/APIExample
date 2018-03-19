@@ -6,27 +6,14 @@ window.fbAsyncInit = function() {
     xfbml            : true,
     version          : 'v2.12'
   });
-  
-    //ui is a trigger 
-  FB.ui({
-     method: 'share',
-     href: 'https://developers.facebook.com/docs/'
-   }, function(response){});
+   FB.getLoginStatus(function(response) {
+   statusChangeCallback(response);
+   });
    
-    //Call to graph API
-   FB.api(
-    "/page-id/feed",
-    "POST",
-    {
-        "message": ""
-    },
-    function (response) {
-      if (response && !response.error) {
-        /* handle the result */
-      }
-    }
-);
-);
+   FB.login(function(response) {
+   });
+    
+    
 };
 
 //SDK startup point
