@@ -12,6 +12,8 @@ window.fbAsyncInit = function() {
    
    FB.login(function(response) {
    });
+   
+   
     
     
 };
